@@ -36,6 +36,7 @@ protocol HeightConstraintOverlayTranslationControllerDelegate: AnyObject {
     func translationControllerDidScheduleTranslations(_ translationController: OverlayTranslationController)
 }
 
+@MainActor
 class HeightConstraintOverlayTranslationController: OverlayTranslationController {
 
     weak var delegate: HeightConstraintOverlayTranslationControllerDelegate?

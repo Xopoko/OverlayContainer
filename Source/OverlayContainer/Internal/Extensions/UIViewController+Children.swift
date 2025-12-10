@@ -7,6 +7,7 @@
 
 import UIKit
 
+@MainActor
 extension UIViewController {
     func addChild(_ child: UIViewController, in containerView: UIView) {
         guard containerView.isDescendant(of: view) else { return }
